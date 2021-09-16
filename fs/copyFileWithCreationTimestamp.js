@@ -18,7 +18,7 @@ const dayjs = require("dayjs");
  * @param {string} path Chemin d'accès du fichier à copier.
  * @param {string} targetFolder Par défaut : "".
  * @returns {string} Nom de fichier de la copie. `undefined` si le fichier d'origine n'existait pas.
- * @version 0.2.0 2021-09-16 Renvoie le nom du fichier écrit en cas de succès (Breaking: la signature de la valeur de retour a changé.)
+ * @version 0.2.0  2021-09-16 Renvoie le nom du fichier écrit en cas de succès (Breaking: la signature de la valeur de retour a changé.)
  */
 async function copyFileWithCreationTimestamp(path, targetFolder = "") {
   let sourceFileExists = await pathExists(path);
